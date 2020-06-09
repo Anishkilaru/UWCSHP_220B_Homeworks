@@ -1,0 +1,14 @@
+﻿@model BirthdayCardModel
+@{
+    ViewData["Title"] = "BirthdayCardView";
+}
+
+<h3 style="font-family:'Times New Roman'">
+    Birthday Card Sent
+</h3>
+<div style="padding: 5px 5px;font-family: monospace;">From: @Model.From </div>
+<div style="padding: 5px 5px;font-family: monospace;">To: @Model.To</div>
+<div style="padding: 5px 5px;font-family: monospace;">Message: @Model.Message</div>
+<div class="form-group" style="margin-top:5px">
+    <button type="submit" onclick="location.href='@Url.Action("BirthdayCardForm")'" class="btn btn-info" >Back</button>
+</div>
